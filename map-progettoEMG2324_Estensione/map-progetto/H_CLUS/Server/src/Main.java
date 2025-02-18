@@ -22,7 +22,7 @@ public class Main {
 
         String address = "0.0.0.0";
         int port = 8080;
-        String botToken = "7813312590:AAHuduBG0hFgjHmN3dbjsVJVxpVSWAlV3q8";
+        String botToken = "Place Bot token here";
 
         // Sovrascrive i valori di default di address e port se presenti in args
         if (args.length > 0) {
