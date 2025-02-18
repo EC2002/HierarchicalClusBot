@@ -1,0 +1,17 @@
+🎉 Benvenuti su Hercules! 🤖✨
+
+🔍 Che cosa fa questo bot?
+Hercules è un'interfaccia studiata per l'analisi dei dati e della clusterizzazione agglomerativa. 🗂️📊
+
+💡 Caratteristiche principali:
+
+📈 Analizza i dati utilizzando tecniche di clusterizzazione gerarchica.
+🌐 Connetti il tuo client Java al server per analizzare le relazioni nei dataset.
+🌳 Scegli se caricare un file dal server o analizzare un nuovo dataset salvato in memoria.
+🌟 Scegli con quale distanza effettuare l'analisi dei dati.
+
+I comandi per iniziare ad usare il bot sono: 
+/start - Permette di avviare la sessione
+/end   - Permette di chiudere la sessione in qualsiasi momento
+
+Grazie per aver scelto Hercules! 🎊

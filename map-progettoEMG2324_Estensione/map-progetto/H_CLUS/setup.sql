@@ -1,0 +1,32 @@
+/** ELIMINA L'UTENTE MAP SE VIENE TROVATO **/
+DROP USER IF EXISTS 'MapUser'@'%';
+
+/** RICREA L'UTENTE MAP CON PASSWORD MAP **/
+CREATE USER 'MapUser'@'%' IDENTIFIED BY 'map';
+
+/** CREA IL DATABASE map SE NON ESISTE GIA' **/
+CREATE DATABASE IF NOT EXISTS mapdb;
+
+USE mapdb;
+
+/** ASSEGNA I PRIVILEGI ALL'UTENTE MAP SUL DATABASE MAP **/
+GRANT ALL PRIVILEGES ON mapdb.* TO 'MapUser'@'%';
+
+/** CREA UNA TABELLA DI ESEMPIO exampleTab **/
+DROP TABLE IF EXISTS exampletab;
+
+CREATE TABLE exampletab(
+  X1 FLOAT, 
+  X2 FLOAT, 
+  X3 FLOAT 
+); 
+
+/** INSERISCI ALCUNI DATI NELLA TABELLA **/
+INSERT INTO exampletab VALUES(1, 2, 4);
+INSERT INTO exampletab VALUES(3, 1, -2);
+INSERT INTO exampletab VALUES(0, 5, -5);
+INSERT INTO exampletab VALUES(0, 3, 4);
+INSERT INTO exampletab VALUES(2, 2, 6);
+
+/** Optional COMMIT, if you're using transactions **/
+-- COMMIT;
